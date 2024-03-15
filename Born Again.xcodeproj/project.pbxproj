@@ -7,18 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9D765A902B9FA14500A798DD /* Born_Again_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D765A8F2B9FA14500A798DD /* Born_Again_AppApp.swift */; };
+		9D765A902B9FA14500A798DD /* Born_Again_App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D765A8F2B9FA14500A798DD /* Born_Again_App.swift */; };
 		9D765A922B9FA14500A798DD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D765A912B9FA14500A798DD /* ContentView.swift */; };
 		9D765A942B9FA14800A798DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D765A932B9FA14800A798DD /* Assets.xcassets */; };
 		9D765A972B9FA14800A798DD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D765A962B9FA14800A798DD /* Preview Assets.xcassets */; };
+		9D7EF9562BA351BD003D89CF /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7EF9552BA351BD003D89CF /* WebView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		9D765A8C2B9FA14500A798DD /* Born Again App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Born Again App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		9D765A8F2B9FA14500A798DD /* Born_Again_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Born_Again_AppApp.swift; sourceTree = "<group>"; };
+		9D765A8C2B9FA14500A798DD /* Born Again.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Born Again.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D765A8F2B9FA14500A798DD /* Born_Again_App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Born_Again_App.swift; sourceTree = "<group>"; };
 		9D765A912B9FA14500A798DD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9D765A932B9FA14800A798DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9D765A962B9FA14800A798DD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9D7EF9552BA351BD003D89CF /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,7 +45,7 @@
 		9D765A8D2B9FA14500A798DD /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9D765A8C2B9FA14500A798DD /* Born Again App.app */,
+				9D765A8C2B9FA14500A798DD /* Born Again.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -51,8 +53,8 @@
 		9D765A8E2B9FA14500A798DD /* Born Again App */ = {
 			isa = PBXGroup;
 			children = (
-				9D765A8F2B9FA14500A798DD /* Born_Again_AppApp.swift */,
-				9D765A912B9FA14500A798DD /* ContentView.swift */,
+				9D765AA72BA0F29700A798DD /* Views */,
+				9D765A8F2B9FA14500A798DD /* Born_Again_App.swift */,
 				9D765A932B9FA14800A798DD /* Assets.xcassets */,
 				9D765A952B9FA14800A798DD /* Preview Content */,
 			);
@@ -67,12 +69,21 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		9D765AA72BA0F29700A798DD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9D7EF9552BA351BD003D89CF /* WebView.swift */,
+				9D765A912B9FA14500A798DD /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		9D765A8B2B9FA14500A798DD /* Born Again App */ = {
+		9D765A8B2B9FA14500A798DD /* Born Again */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9D765A9A2B9FA14800A798DD /* Build configuration list for PBXNativeTarget "Born Again App" */;
+			buildConfigurationList = 9D765A9A2B9FA14800A798DD /* Build configuration list for PBXNativeTarget "Born Again" */;
 			buildPhases = (
 				9D765A882B9FA14500A798DD /* Sources */,
 				9D765A892B9FA14500A798DD /* Frameworks */,
@@ -82,9 +93,9 @@
 			);
 			dependencies = (
 			);
-			name = "Born Again App";
+			name = "Born Again";
 			productName = "Born Again App";
-			productReference = 9D765A8C2B9FA14500A798DD /* Born Again App.app */;
+			productReference = 9D765A8C2B9FA14500A798DD /* Born Again.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -102,7 +113,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 9D765A872B9FA14500A798DD /* Build configuration list for PBXProject "Born Again App" */;
+			buildConfigurationList = 9D765A872B9FA14500A798DD /* Build configuration list for PBXProject "Born Again" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -115,7 +126,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9D765A8B2B9FA14500A798DD /* Born Again App */,
+				9D765A8B2B9FA14500A798DD /* Born Again */,
 			);
 		};
 /* End PBXProject section */
@@ -138,7 +149,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				9D765A922B9FA14500A798DD /* ContentView.swift in Sources */,
-				9D765A902B9FA14500A798DD /* Born_Again_AppApp.swift in Sources */,
+				9D765A902B9FA14500A798DD /* Born_Again_App.swift in Sources */,
+				9D7EF9562BA351BD003D89CF /* WebView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +287,8 @@
 				DEVELOPMENT_TEAM = 4PM6GBNL6A;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Born Again";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.social-networking";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -304,6 +318,8 @@
 				DEVELOPMENT_TEAM = 4PM6GBNL6A;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Born Again";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.social-networking";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -325,7 +341,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		9D765A872B9FA14500A798DD /* Build configuration list for PBXProject "Born Again App" */ = {
+		9D765A872B9FA14500A798DD /* Build configuration list for PBXProject "Born Again" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9D765A982B9FA14800A798DD /* Debug */,
@@ -334,7 +350,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9D765A9A2B9FA14800A798DD /* Build configuration list for PBXNativeTarget "Born Again App" */ = {
+		9D765A9A2B9FA14800A798DD /* Build configuration list for PBXNativeTarget "Born Again" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9D765A9B2B9FA14800A798DD /* Debug */,
