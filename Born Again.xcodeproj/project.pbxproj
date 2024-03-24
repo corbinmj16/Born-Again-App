@@ -15,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9D17F5722BB0383100DF7B99 /* Born-Again-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Born-Again-Info.plist"; sourceTree = "<group>"; };
 		9D765A8C2B9FA14500A798DD /* Born Again.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Born Again.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D765A8F2B9FA14500A798DD /* Born_Again_App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Born_Again_App.swift; sourceTree = "<group>"; };
 		9D765A912B9FA14500A798DD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -37,6 +38,7 @@
 		9D765A832B9FA14500A798DD = {
 			isa = PBXGroup;
 			children = (
+				9D17F5722BB0383100DF7B99 /* Born-Again-Info.plist */,
 				9D765A8E2B9FA14500A798DD /* Born Again App */,
 				9D765A8D2B9FA14500A798DD /* Products */,
 			);
@@ -287,6 +289,7 @@
 				DEVELOPMENT_TEAM = 4PM6GBNL6A;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Born-Again-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Born Again";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.social-networking";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -318,6 +321,7 @@
 				DEVELOPMENT_TEAM = 4PM6GBNL6A;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Born-Again-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Born Again";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.social-networking";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
