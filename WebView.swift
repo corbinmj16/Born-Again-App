@@ -8,6 +8,7 @@
 import SwiftUI
 import WebKit
 
+
 struct WebView: View {
     @State private var isSheetPresented = false
     @State private var isLoading = true
@@ -24,7 +25,6 @@ struct WebView: View {
         webView: WKWebView()
       )
       .onChange(of: clickedUrl) { oldValue, newValue in
-          print(newValue!)
       }
       .sheet(isPresented: $isSheetPresented) {
         if (clickedUrl != nil) {
@@ -33,8 +33,7 @@ struct WebView: View {
           Text("Whoops, something went wrong. Please try again.")
         }
       }
-        
-      
+
     }
 }
 
@@ -89,8 +88,6 @@ extension WebsiteViewer {
     
     func webView(_ webView: WKWebView, createWebViewWith configuration: WKWebViewConfiguration, for navigationAction: WKNavigationAction, windowFeatures: WKWindowFeatures) -> WKWebView? {
       if navigationAction.targetFrame == nil {
-        print(webView.url!)
-        print(navigationAction.request.url!)
         parent.mainUrl = webView.url!
         parent.clickedUrl = navigationAction.request.url!
         parent.isSheetPresented = true
