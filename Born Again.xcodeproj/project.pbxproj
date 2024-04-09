@@ -12,6 +12,7 @@
 		9D765A942B9FA14800A798DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D765A932B9FA14800A798DD /* Assets.xcassets */; };
 		9D765A972B9FA14800A798DD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D765A962B9FA14800A798DD /* Preview Assets.xcassets */; };
 		9D7EF9562BA351BD003D89CF /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7EF9552BA351BD003D89CF /* WebView.swift */; };
+		9D93BD782BC5B54000786E6A /* ResourceCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D93BD772BC5B54000786E6A /* ResourceCard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		9D765A932B9FA14800A798DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9D765A962B9FA14800A798DD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9D7EF9552BA351BD003D89CF /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = SOURCE_ROOT; };
+		9D93BD772BC5B54000786E6A /* ResourceCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourceCard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 		9D765A8E2B9FA14500A798DD /* Born Again App */ = {
 			isa = PBXGroup;
 			children = (
+				9D93BD792BC5B55000786E6A /* Resources */,
 				9D765AA72BA0F29700A798DD /* Views */,
 				9D765A8F2B9FA14500A798DD /* Born_Again_App.swift */,
 				9D765A932B9FA14800A798DD /* Assets.xcassets */,
@@ -78,6 +81,14 @@
 				9D765A912B9FA14500A798DD /* ContentView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		9D93BD792BC5B55000786E6A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9D93BD772BC5B54000786E6A /* ResourceCard.swift */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,6 +164,7 @@
 				9D765A922B9FA14500A798DD /* ContentView.swift in Sources */,
 				9D765A902B9FA14500A798DD /* Born_Again_App.swift in Sources */,
 				9D7EF9562BA351BD003D89CF /* WebView.swift in Sources */,
+				9D93BD782BC5B54000786E6A /* ResourceCard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
