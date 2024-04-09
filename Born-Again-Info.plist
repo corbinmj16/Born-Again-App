@@ -6,5 +6,12 @@
 	<array>
 		<string>fetch</string>
 	</array>
+	<key>UILaunchScreen</key>
+	<dict>
+		<key>UIColorName</key>
+		<string>LaunchScreenBgColor</string>
+		<key>UIImageName</key>
+		<string>LaunchScreenBgImage</string>
+	</dict>
 </dict>
 </plist>
