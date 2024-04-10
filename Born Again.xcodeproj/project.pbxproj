@@ -292,7 +292,6 @@
 				INFOPLIST_FILE = "Born-Again-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Born Again";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
-				INFOPLIST_KEY_NSCameraUsageDescription = "If you'd like to use your camera to take pictures and upload them - please select 'Allow' access.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
@@ -330,7 +329,6 @@
 				INFOPLIST_FILE = "Born-Again-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Born Again";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
-				INFOPLIST_KEY_NSCameraUsageDescription = "If you'd like to use your camera to take pictures and upload them - please select 'Allow' access.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UIStatusBarHidden = YES;

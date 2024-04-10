@@ -13,7 +13,7 @@ struct WebView: View {
     @State private var isSheetPresented = false
     @State private var isLoading = true
     @State private var clickedUrl: URL?
-    @State private var mainUrl: URL = URL(string: "http://bornagain.app")!
+    @State private var mainUrl: URL = URL(string: "http://bornagain.app/login")!
   
     var body: some View {
       

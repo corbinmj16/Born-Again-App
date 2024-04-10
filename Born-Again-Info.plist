@@ -12,6 +12,8 @@
 		<string>LaunchScreenBgColor</string>
 		<key>UIImageName</key>
 		<string>LaunchScreenBgImage</string>
+		<key>UIImageRespectsSafeAreaInsets</key>
+		<true/>
 	</dict>
 </dict>
 </plist>
