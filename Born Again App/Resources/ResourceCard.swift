@@ -7,9 +7,12 @@
 
 import SwiftUI
 
+var fakeResource = Resource(id: 1, user_id: 1, title: "Some Resource Title", description: "Some description for the resource", category: "Website", created_at: "Nov. 2, 2024", user: User(id: 1, name: "Corbin", email: "corbin@me.com", user_name: "corbin", gospel_recieved: 1))
+
 struct ResourceCard: View {
-  @State private var isSharing = false;
-  @State private var isSaved = false;
+  @State private var isSharing = false
+  @State private var isSaved = false
+  var resource: Resource
   
     var body: some View {
       VStack {
@@ -94,20 +97,6 @@ struct ResourceCard: View {
           .symbolEffect(.bounce.down.byLayer, value: isSharing)
           .font(.callout)
           
-          Spacer()
-          
-          Button(action: {
-            isSaved.toggle()
-          }, label: {
-            Label(
-              title: { Text("Save") },
-              icon: {
-                Image(systemName: "bookmark")
-              }
-            )
-          })
-          .symbolEffect(.bounce.down.byLayer, value: isSaved)
-          .font(.callout)
           
         }
 //        .padding(.horizontal, 50)
@@ -120,5 +109,5 @@ struct ResourceCard: View {
 }
 
 #Preview {
-    ResourceCard()
+    ResourceCard(resource: fakeResource)
 }

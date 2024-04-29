@@ -7,31 +7,48 @@
 
 import SwiftUI
 
+// https://born-again.test/api/all
+
 struct ProfileBody: View {
-  @State var pickerSelction = "resources"
-  
+  @State private var resources = [Resource]()
+
     var body: some View {
-      VStack(alignment: .leading) {
+      
+      VStack {
         ProfileHeader()
         
-        Picker("Resource Type", selection: $pickerSelction) {
-          Text("Resources")
-            .tag("resources")
-          
-          Text("Saved")
-            .tag("saved")
+        List(resources, id: \.id) { resource in
+          ResourceCard(resource: resource)
         }
-        .pickerStyle(.segmented)
+        .listRowSpacing(10)
+        .task {
+          await fetchResources()
+        }
+          
       }
-      .padding(.horizontal)
       
-      
-      List([1,2,3,4], id: \.self) {_ in
-        ResourceCard()
-      }
-      .listRowSpacing(20)
       
     }
+  
+  func fetchResources() async {
+    guard let url = URL(string: "https://bornagain.app/api/all") else {
+      print("Invalid URL")
+      return
+    }
+    
+    do {
+      let request = URLRequest.addValue("application/json", forHTTPHeaderField: "Bearer")
+      let (data, other) = try await URLSession.shared.data(from: url)
+      
+      if let decodedResponse = try? JSONDecoder().decode([Resource].self, from: data) {
+        print(decodedResponse)
+        resources = decodedResponse
+      }
+    } catch {
+      print(error)
+    }
+  }
+
 }
 
 #Preview {

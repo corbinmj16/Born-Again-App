@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		9D1918CA2BC9B0A00053D7A7 /* ProfileHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1918C92BC9B0A00053D7A7 /* ProfileHeader.swift */; };
 		9D1918CC2BC9B2B30053D7A7 /* ProfileBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1918CB2BC9B2B30053D7A7 /* ProfileBody.swift */; };
+		9D71B3D82BCF076900AC37D7 /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D71B3D72BCF076900AC37D7 /* Resource.swift */; };
+		9D71B3DA2BCF07D800AC37D7 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D71B3D92BCF07D800AC37D7 /* User.swift */; };
 		9D765A902B9FA14500A798DD /* Born_Again_App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D765A8F2B9FA14500A798DD /* Born_Again_App.swift */; };
 		9D765A922B9FA14500A798DD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D765A912B9FA14500A798DD /* ContentView.swift */; };
 		9D765A942B9FA14800A798DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D765A932B9FA14800A798DD /* Assets.xcassets */; };
@@ -21,6 +23,8 @@
 		9D17F5722BB0383100DF7B99 /* Born-Again-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Born-Again-Info.plist"; sourceTree = "<group>"; };
 		9D1918C92BC9B0A00053D7A7 /* ProfileHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeader.swift; sourceTree = "<group>"; };
 		9D1918CB2BC9B2B30053D7A7 /* ProfileBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileBody.swift; sourceTree = "<group>"; };
+		9D71B3D72BCF076900AC37D7 /* Resource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resource.swift; sourceTree = "<group>"; };
+		9D71B3D92BCF07D800AC37D7 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		9D765A8C2B9FA14500A798DD /* Born Again.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Born Again.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D765A8F2B9FA14500A798DD /* Born_Again_App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Born_Again_App.swift; sourceTree = "<group>"; };
 		9D765A912B9FA14500A798DD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -50,6 +54,15 @@
 			path = Profile;
 			sourceTree = "<group>";
 		};
+		9D71B3D62BCF074A00AC37D7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9D71B3D72BCF076900AC37D7 /* Resource.swift */,
+				9D71B3D92BCF07D800AC37D7 /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		9D765A832B9FA14500A798DD = {
 			isa = PBXGroup;
 			children = (
@@ -70,6 +83,7 @@
 		9D765A8E2B9FA14500A798DD /* Born Again App */ = {
 			isa = PBXGroup;
 			children = (
+				9D71B3D62BCF074A00AC37D7 /* Models */,
 				9D1918C82BC9809B0053D7A7 /* Profile */,
 				9D93BD792BC5B55000786E6A /* Resources */,
 				9D765AA72BA0F29700A798DD /* Views */,
@@ -179,8 +193,10 @@
 				9D1918CC2BC9B2B30053D7A7 /* ProfileBody.swift in Sources */,
 				9D765A902B9FA14500A798DD /* Born_Again_App.swift in Sources */,
 				9D7EF9562BA351BD003D89CF /* WebView.swift in Sources */,
+				9D71B3DA2BCF07D800AC37D7 /* User.swift in Sources */,
 				9D1918CA2BC9B0A00053D7A7 /* ProfileHeader.swift in Sources */,
 				9D93BD782BC5B54000786E6A /* ResourceCard.swift in Sources */,
+				9D71B3D82BCF076900AC37D7 /* Resource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
