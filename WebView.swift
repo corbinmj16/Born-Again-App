@@ -33,6 +33,7 @@ struct WebView: View {
           Text("Whoops, something went wrong. Please try again.")
         }
       }
+      .ignoresSafeArea(.all, edges: .bottom)
 
     }
 }
